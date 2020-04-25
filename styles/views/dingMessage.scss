@@ -1,0 +1,42 @@
+.dingmessage {
+  width: 100%;
+  height: 100vh;
+  .wirteDiscuss {
+    width: 100%;
+  }
+
+  .scroll-wrap {
+    .listTop {
+      .anticon-plus-circle {
+        display: none;
+      }
+    }
+    .listContent {
+      .delte {
+        display: none;
+      }
+      .taskUrge {
+        display: none;
+      }
+      .taskName {
+        margin-right: 154px !important;
+      }
+    }
+  }
+  .myfg_discuss {
+    .topSection {
+      display: flex;
+      .nickName {
+        overflow: hidden;
+      }
+    }
+  }
+}
+.fileSection2 {
+  width: 280px !important;
+}
+
+body {
+  min-width: auto !important;
+  min-height: auto !important;
+}

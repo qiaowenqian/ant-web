@@ -1,0 +1,18 @@
+#uploadAvatat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  height: 240px;
+  .hasattstr04 {
+    .ant-upload.ant-upload-select-picture-card {
+      border: 0px dashed;
+    }
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    border-radius: 50%;
+  }
+  .ant-upload {
+    padding: 0;
+  }
+}

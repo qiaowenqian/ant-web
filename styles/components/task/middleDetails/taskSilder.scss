@@ -1,0 +1,16 @@
+.slider {
+  padding: 0 20px;
+  .sliderBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    color: #9e9e9e;
+    cursor: pointer;
+    .borderDash {
+      width: 100px;
+      height: 0;
+      border-top: 1px dashed #9e9e9e;
+    }
+  }
+}

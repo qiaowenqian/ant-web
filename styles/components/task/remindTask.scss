@@ -1,0 +1,115 @@
+.loopPopover1 {
+  .ant-popover-content {
+    height: 330px;
+    width: 360px;
+    border-radius: 4px;
+    top: 70px;
+    left: 120px;
+    .ant-popover-inner {
+      height: 330px;
+      width: 360px;
+    }
+    .ant-popover-title {
+      padding: 0;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    .loopHeader1 {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      left: 0;
+      border-bottom: 1px solid #eee;
+      .btn {
+        height: 68px;
+        line-height: 68px;
+        > span {
+          font-size: 16px;
+          font-weight: 400;
+          cursor: pointer;
+        }
+        .title {
+          color: #3a3a3a;
+          font-weight: bold;
+          position: relative;
+          top: 6px;
+          margin-left: 16px;
+        }
+        .determine {
+          color: #1e88e5;
+          margin-left: 232px;
+          position: relative;
+          top: 6px;
+        }
+        .ssssssssss {
+          margin-left: 180px;
+          position: relative;
+          color: #bdbdbd;
+          top: 6px;
+        }
+        .determines {
+          margin-left: 180px;
+          color: #ffa031;
+          position: relative;
+          top: 6px;
+        }
+      }
+    }
+    .remindTip {
+      position: absolute;
+      top: 80px;
+      width: 92%;
+      height: 30px;
+      line-height: 30px;
+      color: #999ca1;
+      font-size: 14px;
+      .addTip {
+        float: right;
+        color: #639efd;
+        cursor: pointer;
+        .icon-add {
+          font-size: 24px;
+        }
+      }
+    }
+    .RemSelectBox {
+      position: absolute;
+      top: 120px;
+      width: 95%;
+      overflow: auto;
+      .RemSelectContent {
+        margin-bottom: 10px;
+        .ant-select {
+          margin-right: 10px;
+          .ant-select-selection--single {
+            height: 24px;
+            line-height: 24px;
+            .ant-select-selection__rendered {
+              height: 24px;
+              line-height: 24px;
+            }
+          }
+        }
+        .delTip {
+          .icon-icon_huabanfuben5 {
+            display: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .RemSelectContent:hover {
+        position: relative;
+        .delTip {
+          .icon-icon_huabanfuben5 {
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

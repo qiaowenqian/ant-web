@@ -1,0 +1,218 @@
+.projectGuideModal1 {
+  .ant-modal {
+    width: 256px !important;
+    height: 256px !important;
+    position: absolute;
+    top: 168px;
+    .ant-modal-content {
+      border-radius: 2px;
+      padding: 0;
+      .ant-modal-body {
+        padding: 0;
+      }
+      .num {
+        height: 50px;
+        line-height: 50px;
+        margin-left: 24px;
+        font-size: 16px;
+        color: #212121;
+        .poxuqiu {
+          font-size: 14px;
+          margin-right: 12px;
+          color: #bdbdbd;
+        }
+        .nums {
+          color: #757575;
+          background-color: #eee;
+          border-radius: 24px;
+          height: 24px;
+          min-width: 24px;
+          position: absolute;
+          right: 24px;
+          text-align: center;
+          padding: 4px;
+          line-height: 17px;
+          font-size: 12px;
+          margin-top: 15px;
+        }
+      }
+      .tip {
+        position: absolute;
+        width: 268px;
+        height: 88px;
+        left: 304px;
+        top: 50px;
+        background-color: #fff;
+        padding: 24px;
+        border-radius: 4px;
+
+        /*向左*/
+        .sanjiao {
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 10px solid #fff;
+          position: absolute;
+          left: -10px;
+          top: 38px;
+        }
+        > span {
+          color: #1e88e5;
+        }
+      }
+      .projectBtn {
+        position: absolute;
+        width: 268px;
+        left: 304px;
+        top: 155px;
+        color: #fff;
+        cursor: pointer;
+        text-align: right;
+
+        .nextStep {
+          border: 1px solid #fff;
+          padding: 10px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+.projectGuideModal2 {
+  .ant-modal {
+    width: 108px !important;
+    height: 32px !important;
+    position: absolute;
+    top: 99px;
+    right: 25px;
+    padding: 0;
+    .ant-modal-content {
+      border-radius: 2px;
+      .ant-modal-body {
+        width: 108px;
+        padding: 0;
+        height: 32px;
+        overflow: hidden;
+        text-align: center;
+        line-height: 32px;
+      }
+      .btn2 {
+        color: #1e88e5;
+      }
+      .num {
+        margin-bottom: 20px;
+      }
+      .tip {
+        position: absolute;
+        width: 268px;
+        height: 88px;
+        right: 140px;
+        line-height: 20px;
+        top: 0;
+        background-color: #fff;
+        padding: 24px;
+        text-align: left;
+        border-radius: 4px;
+
+        /*向左*/
+        .sanjiao {
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid #fff;
+          position: absolute;
+          right: -10px;
+          top: 10px;
+        }
+        > span {
+          color: #1e88e5;
+        }
+      }
+      .projectBtn {
+        position: absolute;
+        width: 268px;
+        right: 242px;
+        top: 98px;
+        color: #fff;
+        cursor: pointer;
+        .nextStep {
+          border: 1px solid #fff;
+          padding: 10px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+.projectGuideModal3 {
+  .ant-modal {
+    width: 32px !important;
+    height: 32px !important;
+    position: absolute;
+    top: 170px;
+    right: 10px;
+    .icon-pin {
+      font-size: 24px;
+      color: #1e88e5;
+    }
+    // background-color: rgba(255, 255, 255, 1);
+    .ant-modal-content {
+      border-radius: 24px;
+      .ant-modal-body {
+        // width: 32px;
+        // height: 32px;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 32px;
+      }
+      .num {
+        margin-bottom: 20px;
+      }
+      .tip {
+        position: absolute;
+        width: 268px;
+        height: 88px;
+        right: 95px;
+        top: 0px;
+        padding: 24px;
+        background-color: #fff;
+        line-height: 20px;
+        text-align: left;
+        border-radius: 4px;
+        /*向左*/
+        .sanjiao {
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid #fff;
+          position: absolute;
+          right: -10px;
+          top: 10px;
+        }
+        > span {
+          color: #1e88e5;
+        }
+      }
+      .projectBtn {
+        position: absolute;
+        width: 268px;
+        right: 200px;
+        top: 100px;
+        color: #fff;
+        cursor: pointer;
+        .nextStep {
+          border: 1px solid #fff;
+          padding: 10px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

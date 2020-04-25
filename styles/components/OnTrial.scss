@@ -1,0 +1,49 @@
+.OnTrial {
+  .ant-modal-content {
+    border-radius: 16px;
+    background-color: rgab(0, 0, 0, 1);
+    height: 454px;
+    .ant-modal-body {
+      padding: 0;
+      background-color: rgab(0, 0, 0, 1);
+      height: 454px;
+      .myClose {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        font-size: 25px;
+        color: rgba($color: #fff, $alpha: 0.7);
+        height: 35px;
+        .noreminder {
+          font-size: 14px;
+          text-decoration: underline;
+          margin-right: 30px;
+          vertical-align: middle;
+        }
+        cursor: pointer;
+        .icon-guanbi {
+          font-size: 25px;
+        }
+      }
+      img {
+        width: 404px;
+        height: 454px;
+      }
+      .ant-btn {
+        position: absolute;
+        bottom: -86px;
+        left: 77px;
+        right: 0;
+        width: 240px;
+        height: 54px;
+        border-radius: 51px;
+        background-color: #639efd;
+        color: #fff;
+        font-size: 20px;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

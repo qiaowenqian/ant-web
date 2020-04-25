@@ -1,0 +1,25 @@
+.rightBottomButton {
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  .rightBottomButtonRight {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    .ant-btn {
+      height: 30px;
+      line-height: 30px;
+      margin-left: 20px;
+    }
+  }
+
+  .buttonGroupInfo {
+    height: 30px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #bdbdbd;
+    //     align-self: flex-end;
+  }
+}

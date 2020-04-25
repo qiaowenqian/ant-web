@@ -1,0 +1,262 @@
+.recycleModal {
+  .ant-modal .ant-modal-content {
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    // min-height: 512px;
+    .ant-modal-header {
+      padding: 0;
+      border-bottom: 1px solid #f5f5f5;
+      .ant-modal-title {
+        color: #424242 !important;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+      }
+    }
+    .ant-modal-body {
+      padding: 0;
+      overflow: hidden;
+      .recycleBox {
+        display: flex;
+        .ant-menu {
+          position: fixed;
+          // height: 450px;
+          border-right: 1px solid #f5f5f5;
+        }
+        .ant-menu-item {
+          padding: 0 !important;
+          margin: 0;
+          width: 110px;
+          height: 44px;
+          text-align: center;
+          z-index: 100;
+          cursor: pointer;
+          border-left: 3px solid #fff;
+        }
+        .ant-menu-item:hover {
+          color: #64b5f6;
+        }
+        .ant-menu-item-selected {
+          border-left: 3px solid #64b5f6;
+          color: #64b5f6;
+          background-color: #fff;
+          // border-right: 1px solid #f5f5f5;
+        }
+        .ant-menu-item:after {
+          border-right: none;
+        }
+
+        .projectBorder {
+          border-top: 1px solid #f5f5f5;
+          border-bottom: 1px solid #f5f5f5;
+          border-right: 1px solid #f5f5f5;
+          // border-right: none;
+          .icon-project {
+            position: absolute;
+            left: 12px;
+            font-size: 14px;
+          }
+        }
+        .taskBorder {
+          border-right: 1px solid #f5f5f5;
+          .icon-alltasks {
+            position: absolute;
+            left: 12px;
+            font-size: 14px;
+          }
+        }
+        .title {
+          width: 685px;
+          display: flex;
+          height: 45px;
+          border-bottom: 1px solid #f5f5f5;
+          color: #9e9e9e;
+          line-height: 44px;
+          z-index: 100;
+          position: absolute;
+          background-color: #fff;
+          left: 110px;
+          .name {
+            position: absolute;
+            left: 41px;
+          }
+          .delPeple {
+            position: absolute;
+            right: 152px;
+          }
+          .delTime {
+            position: absolute;
+            right: 32px;
+          }
+        }
+        .recycleContent {
+          flex-shrink: 1;
+          width: 100%;
+          margin-left: 110px;
+          height: 370px;
+          overflow: auto;
+          position: relative;
+          top: 45px;
+          margin-bottom: 45px;
+          // border-left: 1px solid #f5f5f5;
+          .ant-list-item:nth-of-type(even) {
+            background-color: #fafafa;
+          }
+          .ant-list-item:hover {
+            background-color: #eee;
+          }
+          .ant-list {
+            .ant-list-item {
+              border: none;
+              height: 64px;
+              cursor: pointer;
+              .ant-list-item-content {
+                margin-left: 12px;
+              }
+              .itemName {
+                margin-left: 12px;
+                .taskname {
+                  color: #424242;
+                  margin-right: 200px;
+                  overflow: hidden;
+                  height: 20px;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 400px;
+                }
+                .proname {
+                  color: #9e9e9e;
+                  font-size: 12px;
+                  height: 20px;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 400px;
+                  overflow: hidden;
+                  margin-top: 4px;
+                  .smallIcon {
+                    font-size: 12px;
+                    margin-right: 2px;
+                  }
+                }
+              }
+              .delPeole {
+                color: #424242;
+                position: absolute;
+                line-height: 42px;
+                right: 152px;
+                .task {
+                  height: 64px;
+                }
+
+                .recoveryTask {
+                  display: none;
+                }
+              }
+
+              .delTimes {
+                color: #424242;
+                position: absolute;
+                left: 588px;
+                line-height: 40px;
+                width: 90px;
+              }
+              .thoroughly {
+                display: none;
+                margin-left: 10px;
+              }
+              // .times {
+              //   display: block;
+              // }
+              // .delTimes:hover {
+              //   // .time {
+              //   //   display: none;
+              //   // }
+              //   .thoroughly {
+              //     display: block;
+              //     color: #ff8a80;
+              //   }
+              // }
+            }
+            .ant-list-item:hover {
+              .recoveryTask {
+                display: block;
+                color: #64b5f6;
+              }
+              .time {
+                display: none;
+              }
+              .thoroughly {
+                display: block;
+                color: #ff8a80;
+              }
+            }
+          }
+          .projectdel {
+            .ant-list-item {
+              border: none;
+              height: 64px;
+              cursor: pointer;
+              .ant-list-item-content {
+                margin-left: 12px;
+              }
+              .itemName {
+                margin-left: 12px;
+
+                .proname {
+                  color: #424242;
+                  margin-right: 200px;
+                  overflow: hidden;
+                  height: 20px;
+                  font-size: 14px;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 400px;
+                }
+              }
+              .delPeole {
+                color: #424242;
+                position: absolute;
+                right: 152px;
+                line-height: 24px;
+                .recoveryProject {
+                  display: none;
+                }
+              }
+              .delTimes {
+                color: #424242;
+                position: absolute;
+                left: 588px;
+                width: 90px;
+                line-height: 20px;
+              }
+              .thoroughly {
+                display: none;
+              }
+            }
+            .ant-list-item:hover {
+              .recoveryProject {
+                display: block;
+                color: #64b5f6;
+              }
+              .time {
+                display: none;
+              }
+              .thoroughly {
+                display: block;
+                color: #ff8a80;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tootlie {
+    font-size: 12px;
+    color: #bdbdbd;
+    float: right;
+    padding: 10px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+  }
+}

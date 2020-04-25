@@ -1,0 +1,397 @@
+.taskDetailsBox {
+  position: fixed;
+  z-index: 102;
+  top: 70px;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: -2px 0 8px #eee;
+}
+
+.opet_projectDetails {
+  width: 100%;
+  height: 100%;
+  background: #f5f7f9;
+  position: relative;
+  min-width: 800px;
+
+  @media all and (max-width: 1250px) {
+    .pro_cont_top {
+      left: 0 !important;
+    }
+
+    .pro_cont,
+    .pro_buts {
+      left: 15px !important;
+    }
+  }
+
+  .pro_cont_left {
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px #eee;
+    overflow: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 2;
+    position: relative;
+    padding: 12px 16px;
+    .condition {
+      .goback {
+        color: #1e88e5;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .proList {
+      flex: 1;
+      overflow: auto;
+      position: relative;
+      li {
+        font-size: 12px;
+        line-height: 35px;
+        height: 41.2px;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        .ant-checkbox-wrapper {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .pic {
+          display: inline-block;
+          margin-right: 5px;
+          vertical-align: middle;
+          width: 28px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
+
+      li:hover {
+        color: #1e88e5;
+      }
+
+      .act {
+        color: #1e88e5;
+        font-weight: bold;
+      }
+
+      .act:hover {
+        color: #1e88e5;
+      }
+      .ant-checkbox-inner {
+        border-radius: 50%;
+      }
+    }
+  }
+  .pro_cont_top {
+    position: absolute;
+    left: 263px;
+    top: 0;
+    right: 0;
+    height: 88px;
+    background-color: #fff;
+    line-height: 50px;
+    .title {
+      height: 34px;
+      margin-top: 10px;
+      label {
+        margin-left: 32px;
+        font-size: 18px;
+        color: #212121;
+        margin-right: 8px;
+      }
+      span {
+        color: #9e9e9e;
+      }
+    }
+    .svgIcon {
+      position: absolute;
+      top: 17px;
+      left: -18px;
+    }
+    .ant-tabs {
+      margin: 0 32px;
+      height: 44px;
+      .ant-tabs-bar {
+        border-bottom: none;
+      }
+      .ant-tabs-nav {
+        .ant-tabs-tab {
+          padding: 16px 0 10px 0;
+          font-size: 12px;
+          margin-right: 25px;
+          color: #9e9e9e;
+        }
+        .ant-tabs-tab-active {
+          color: #1e88e5;
+          font-weight: 700;
+          border-bottom: 1px solid;
+        }
+      }
+      .ant-tabs-ink-bar {
+        width: 10% !important;
+        left: 3%;
+        // color: #64b5f6;
+        // left: 12px;
+        // display: none !important;
+        margin: 0;
+        padding: 0;
+      }
+      .ant-tabs-tabpane {
+        background-color: #fff;
+        height: 100%;
+      }
+    }
+    // .ant-radio-group {
+    //   float: right;
+    //   .ant-radio-button-wrapper {
+    //     font-size: 12px;
+    //   }
+
+    //   .ant-radio-button-wrapper-checked {
+    //     background: #277be4;
+    //     color: #fff;
+    //   }
+    // }
+
+    .proSet {
+      font-size: 16px;
+      cursor: pointer;
+      color: #bdbdbd;
+      position: absolute;
+      left: 310px;
+      z-index: 100;
+      height: 44px;
+    }
+    .windowSetting {
+      margin-top: 4px;
+      display: inline-block;
+    }
+    .proSet:hover {
+      color: #277be4;
+    }
+    .filesSearch {
+      .inputStyle {
+        position: absolute;
+        right: 24px;
+        top: 30px;
+      }
+      .icon-clears,
+      .icon-search {
+        font-size: 16px;
+        color: #bdbdbd;
+        cursor: pointer;
+      }
+      .windowSearch {
+        margin-top: 6px;
+        display: inline-block;
+      }
+
+      .longInput {
+        width: 192px;
+        transition: width 0.35s linear;
+        float: right;
+      }
+      .smallInput {
+        width: 128px;
+        transition: width 0.35s linear;
+      }
+      .ant-input-affix-wrapper .ant-input:not(:first-child) {
+        border-radius: 17px;
+        border-color: #eee;
+        background-color: #fafafa;
+      }
+      .ant-input-affix-wrapper:hover .ant-input:not(:first-child) {
+        border-radius: 17px;
+        border-color: #1e88e5;
+      }
+    }
+  }
+
+  .pro_buts {
+    position: absolute;
+    left: 280px;
+    top: 105px;
+    right: 15px;
+    .ant-btn {
+      min-width: 100px;
+      line-height: 34px;
+      height: 34px;
+      margin-right: 8px;
+      border-color: #eee;
+    }
+    .taskCreat {
+      margin-right: 16px;
+    }
+    .exportTask {
+      // width: 100px;
+      // height: 34px;
+    }
+    .moreEdit {
+      position: absolute;
+      right: 118px;
+      // width: 100px;
+      // height: 34px;
+      .iconStyle {
+        margin-right: 4px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    .bule {
+      color: #1e88e5;
+    }
+    .moveSort {
+      position: absolute;
+      right: 0px;
+      // width: 100px;
+      // height: 34px;
+      .icon-move {
+        position: relative;
+        left: -2px;
+        top: 1px;
+      }
+    }
+    .tag {
+      margin-left: 16px;
+    }
+    .cancel {
+      width: 80px;
+      margin-left: 16px;
+      height: 34px;
+    }
+    .more {
+      color: #bdbdbd;
+      margin-right: 10px;
+      .ant-select-selection {
+        border-color: #eee !important;
+        height: 32px;
+        // top: -2px;
+        .ant-select-selection__rendered {
+          line-height: 32px;
+        }
+        .ant-select-selection-selected-value {
+          line-height: 32px;
+        }
+      }
+    }
+  }
+
+  .pro_cont {
+    position: absolute;
+    left: 280px;
+    top: 109px;
+    right: 24px;
+    bottom: 24px;
+    background: #fff;
+    // padding: 15px;
+    overflow: auto;
+  }
+  .pro_cont::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+.importStyle {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 15px;
+  margin: 15px 0 0 0;
+  text-align: center;
+  max-height: 500px;
+
+  .p {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    text-align: left;
+    font-size: 12px;
+    background: #f1f1f1;
+    padding: 6px 15px;
+    border-radius: 2px;
+
+    span:first-child {
+      color: #3a9d09;
+    }
+
+    span:last-child {
+      color: #e10215;
+    }
+
+    span {
+      font-weight: bold;
+      margin: 0 7px;
+    }
+  }
+
+  .rowBox {
+    display: flex;
+    text-align: left;
+    border-bottom: 1px dashed #f1f1f1;
+    padding: 10px 0;
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  .head {
+    font-weight: bold;
+  }
+
+  .listBox {
+    max-height: 385px;
+    overflow: auto;
+  }
+
+  .one {
+    flex: 1;
+  }
+
+  .two {
+    flex: 0 0 150px;
+    text-align: center;
+  }
+
+  .three {
+    flex: 0 0 125px;
+    text-align: center;
+  }
+
+  .four {
+    flex: 1;
+  }
+}
+
+.importBut {
+  margin: 10px 0 0 0;
+  text-align: right;
+  font-size: 13px;
+  cursor: pointer;
+  display: block;
+
+  i {
+    color: #4caf50;
+    font-size: 16px;
+    margin: 0 7px 0 0;
+  }
+}
+
+.importBut:hover {
+  color: #000;
+}
+
+.createOverlayClass .ant-tooltip-content .ant-tooltip-inner {
+  font-size: 14px;
+  padding: 8px 14px;
+}

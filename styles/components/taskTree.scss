@@ -1,0 +1,166 @@
+.cpet_task_tree {
+  .icon-movedown {
+    color: #9e9e9e;
+    // margin-left: 20px !important;
+  }
+  .icon-moveup {
+    color: #9e9e9e;
+  }
+  .icon-moveup:last-child {
+    margin-right: 40px !important;
+  }
+  width: 100%;
+  .tree_row {
+    width: 100%;
+    display: flex;
+    .triangle_border {
+      width: 0;
+      height: 0;
+      border-width: 16px 16px 0 0;
+      border-style: solid;
+      top: -1px;
+      position: relative;
+      z-index: 100;
+      i {
+        color: #fff;
+        position: relative;
+        top: -22px;
+        font-size: 12px;
+      }
+    }
+    .tree_icon {
+      flex: 0 0 auto;
+      padding: 0 10px 0 10px;
+      i {
+        font-size: 18px;
+        margin: 30px 0 0 0;
+        cursor: pointer;
+        float: left;
+        color: #7b7c85;
+      }
+      i:hover {
+        color: #72b1ff;
+      }
+    }
+    .tree_task {
+      flex: 1;
+      position: relative;
+    }
+  }
+
+  .taskList_row {
+    padding: 15px;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    .state {
+      position: absolute;
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      background: #ccc;
+      width: 72px;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      height: 16px;
+      line-height: 14px;
+      left: -17px;
+      z-index: 1;
+      top: 12px;
+    }
+    .checkBox {
+      width: 20px;
+      float: left;
+      margin: 14px 0 0 15px;
+    }
+    .taskList_left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 100px;
+      bottom: 0;
+      padding: 15px 15px 15px 45px;
+      .tit_row {
+        margin: 0 0 5px 0;
+        display: flex;
+        > span {
+          background: #e9e9e9;
+          border-top-right-radius: 10px;
+          margin: 0 7px 0 0;
+          border-bottom-right-radius: 10px;
+          padding: 0 15px 0 5px;
+          line-height: 24px;
+        }
+        .taskName {
+          flex: 0 0 auto;
+          max-width: 60%;
+          font-size: 14px;
+          line-height: 26px;
+          margin: 0 15px 0 0;
+          color: #000;
+        }
+        .tasklabs {
+          flex: 1;
+          height: 22px;
+          overflow: hidden;
+          span {
+            padding: 0 5px;
+            margin: 0 8px 2px 0;
+            border: none;
+            border-radius: 2px;
+            float: left;
+            text-align: center;
+            height: 22px;
+          }
+        }
+        .userBox {
+          flex: 1;
+          line-height: 25px;
+          span {
+            margin: 0 0 0 7px;
+          }
+        }
+      }
+      .core_row {
+        color: #9599a2;
+        line-height: 27px;
+        > i {
+          margin: 0 5px 0 0;
+          font-size: 15px;
+        }
+        > span {
+          margin: 0 15px 0 0;
+        }
+      }
+    }
+    .taskList_right {
+      float: right;
+      width: 90px;
+      height: 100%;
+      text-align: right;
+      line-height: 60px;
+      i {
+        margin: 0 0 0 10px;
+        // font-size: 20px;
+      }
+      .moveTaskList {
+        cursor: pointer;
+        font-size: 12px;
+      }
+    }
+  }
+  .taskList_row:hover {
+    background: #f5f9ff;
+  }
+  .act {
+    background: rgba(208, 230, 251, 0.28);
+  }
+  .act:hover {
+    background: rgba(208, 230, 251, 0.28);
+  }
+}
